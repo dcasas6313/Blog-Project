@@ -1,0 +1,51 @@
+nav {
+    background-color: rgb(51,131,255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {    
+    list-style: none;    
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover {
+    color: rgb(175,255,51);
+    text-decoration: none;
+}
+
+.edit {
+    background-color: rgb(51,131,255);
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.edit ul {
+    display: flex;
+    align-items: center;
+}
+
+.edit li {    
+    list-style: none; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;   
+}
+

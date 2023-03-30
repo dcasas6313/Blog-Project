@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interview</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <nav>
+        <h4>Interview Sample</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Log Out</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card" style="width: 40rem;">            
+            <div class="card-header">New Post</div>    
+            <div class="card-body">
+                <form action="/dashboard/post" method="POST">
+                    <div class="mb-3">
+                        <label for="title-reg" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="name-reg" name="title">                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-reg" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="message-reg" name="message">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            {{#if success }}
+            <h4 class="alert alert-success mt-3">{{success}}</h4>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="card" style="width: 40rem;">        
+            <div class="card-header">Posts:</div>    
+            <div class="card-body">
+                <div class="edit">
+                    <h2>Ellucian Live 2023 - NOLA</h2>
+                    <ul>
+                        <li><button type=submit class="btn btn-secondary">Edit</button></button></button></li>
+                        <li><button type=submit class="btn btn-secondary">Edit</button></li>
+                    </ul>
+                </div>
+                <br>
+                <p>Good times!</p>
+                <img src="/images/ELiveNOLA2023.jpg" width="500" height="400">
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
