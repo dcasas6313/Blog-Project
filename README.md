@@ -1,4 +1,4 @@
-# Blog-Project=
+# Blog-Project
 This sample consists of 4 pages:
 - Home - Main Landing page,
 - Login - Used for registered users to login into dashboard,
